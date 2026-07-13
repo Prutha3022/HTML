@@ -1,0 +1,94 @@
+<html lang = "en">
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h1 align = "center">Registrstion Form</h1>
+        <fieldset>
+            <legend>Registrstion</legend>
+        <form action = "home.html" method = "get">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><input type = "text" id="txtname" name = "txtname" pattern = "[a-zA-Z]" placeholder = "Enter full name" required></td>
+                </tr>
+                <tr>
+                    <td>User Name</td>
+                    <td>:</td>
+                    <td><input type = "text" id="uname" name = "uname" placeholder = "Enter user name" pattern = "[a-zA-Z0-9]{6,9}" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type = "password" id="txtpass" name = "txtpass" placeholder = "Enter password" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>:</td>
+                    <td><input type = "radio" id="gen" name = "gen" required value = "Male">Male<input type = "radio" id="gen" name = "gen" required value = "Female" checked>Female</td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td>:</td>
+                    <td><input type = "number" id="number" name = "number" pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type = "email" id="emailtxt" name = "emailtxt"></td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td>:</td>
+                    <td>
+                        <select name="branch" id="branch">
+                        <option value="">SELECT</option>
+                        <option value="" >CE</option>
+                        <option value="">CSE</option>
+                        <option value="">IT</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Area of interest</td>
+                    <td>:</td>
+                    <td>
+                        <select size = "5" name="branch" id="branch" multiple>
+                        <option value="">IOT</option>
+                        <option value="" >Cyber</option>
+                        <option value="">Machine learning</option>
+                        <option value="">Web Dev</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="add" id="add" cols="20" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="1" name="1">Interested in Technical Envet</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="2" name="2">Interested in Non-Technical Envet</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="3" name="3">None</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="sub" name="sub"></td>
+                    
+                </tr>
+            </table>
+        </form>
+        </fieldset>
+    </body>
+</html>
